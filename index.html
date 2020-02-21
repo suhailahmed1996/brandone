@@ -12,6 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.trunk.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
@@ -207,6 +211,23 @@
 
     <section class="wrapper" id="contact">
         <div class="inner">
+            <div class="contactBg" id="contactbg"></div>
+            <script>
+                VANTA.TRUNK({
+                  el: "#contactbg",
+                  mouseControls: true,
+                  touchControls: true,
+                  minHeight: 200.00,
+                  minWidth: 200.00,
+                  scale: 1.00,
+                  scaleMobile: 1.00,
+                  color: 0x624598,
+                  backgroundColor: 0x293643,
+                  spacing: 5.00,
+                  chaos: 4.50
+                });
+            </script>
+        
 
             <!-- contact us -->
             <div class="contactUs">
@@ -223,12 +244,13 @@
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="_replyto" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Message*</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" required></textarea>
+                            <label for="Textarea1">Message*</label>
+                            <textarea type="text" class="form-control" id="Textarea1" rows="5" name="message" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary" value="Send">Submit
+                        <button type="submit" class="btn btn-contact" value="Send">Submit
                         </button>
+
                     </form>
                 </div>
             </div>
@@ -326,6 +348,8 @@
             xhr.send(data);
         }
     </script>
+
+
 </body>
 
 </html>
