@@ -54,7 +54,8 @@
 }
 
 #banner h1 {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'Abril Fatface' ;
 }
 
 #banner:after {
@@ -83,7 +84,17 @@
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
 }
 
+.contactCont{
+    position: relative;
+}
+
 .contactBg{
-    height: 300px;
-    width:100%;
+    height: auto;
+    width: 100%;
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
