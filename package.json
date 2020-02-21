@@ -1,0 +1,20 @@
+{
+  "name": "brandone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch assets/sass/custom.scss:assets/css/custom.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhailahmed1996/brandone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhailahmed1996/brandone/issues"
+  },
+  "homepage": "https://github.com/suhailahmed1996/brandone#readme"
+}
