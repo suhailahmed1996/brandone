@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="./images/fav.png">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.trunk.min.js"></script>
@@ -63,7 +64,10 @@
         <div class="inner">
             <h1>Creative Digital Agency</h1>
             <div>
-                <button>click me</button>
+            <a href="#contact">
+                <button>Work with us</button>
+            </a>
+                
             </div>
             
             <!-- <p>A responsive business oriented template with a video background<br /> designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p> -->
@@ -231,8 +235,8 @@
         </div>
     </section>
 
-    <section class="wrapper pb-0" id="contact">
-        <div class="contactCont p-5">
+    <section class="wrapper pb-0">
+        <div class="contactCont p-5" id="contact">
             <div class="contactBg" id="contactbg"></div>
             <div class="contactUs">
                 
@@ -245,11 +249,15 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address*</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="_replyto" required>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="_replyto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputNumber">Mobile*</label>
+                            <input type="number" class="form-control" id="exampleInputNumber" placeholder="Enter mobile number" name="mobile" required>
                         </div>
                         <div class="form-group">
                             <label for="Textarea1">Message*</label>
-                            <textarea type="text" class="form-control" id="Textarea1" rows="5" name="message" required></textarea>
+                            <textarea type="text" class="form-control" id="Textarea1" rows="5" name="message" placeholder="Your message" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-contact mt-3" value="Send">Submit

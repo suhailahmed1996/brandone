@@ -80,6 +80,7 @@
 
 .contactCont{
     position: relative;
+    padding: 100px 15px !important;
     .contactBg{
         height: auto;
         width: 100%;
@@ -121,6 +122,21 @@
                 height: auto;
             }
         }
+    }
+}
+
+.highlights{
+    section{
+        .content{
+            transition: width 2s, height 2s,;
+            transition-delay: 500ms;
+        }
+        &:hover{
+            .content{
+                transform: scale(1.1);
+                box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
+            }
+        } 
     }
 }
 
