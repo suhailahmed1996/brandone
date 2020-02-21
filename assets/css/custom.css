@@ -61,16 +61,6 @@
   background: linear-gradient(90deg, #6966ff 0%, rgba(0, 196, 255, 0.1390931373) 100%);
 }
 
-.btn-contact {
-  background-color: #6966ff !important;
-  color: black !important;
-}
-.btn-contact:hover {
-  color: black !important;
-  border: 1px solid black;
-  box-shadow: none !important;
-}
-
 .form-control {
   background-color: #ffffff !important;
 }
@@ -91,6 +81,32 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+.contactCont form label {
+  margin: 0px 0px 0px 0px;
+}
+.contactCont form .btn-contact {
+  background-color: #6966ff !important;
+  color: black !important;
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  color: white !important;
+}
+
+.clients .imageCont section {
+  background-color: white;
+  padding: 14px;
+  margin: 0px 15px 15px 0px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients .imageCont section img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=custom.css.map */
